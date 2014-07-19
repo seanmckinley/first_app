@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.8'
-
+group :production do
+	gem 'pg', '0.15.1'
+	gem 'rails_12factor', '0.0.2'
+end
 gem 'sass-rails', '4.0.1'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
